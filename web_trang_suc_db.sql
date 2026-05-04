@@ -21,7 +21,6 @@ SET time_zone = "+00:00";
 -- Cơ sở dữ liệu: `web_trang_suc_db`
 --
 
--- --------------------------------------------------------
 
 --
 -- Cấu trúc bảng cho bảng `banners`
