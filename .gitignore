@@ -1,0 +1,16 @@
+# WordPress standard ignore
+wp-config.php
+wp-content/uploads/
+wp-content/upgrade/
+wp-content/backup-db/
+*.log
+.htaccess
+sitemap.xml
+sitemap.xml.gz
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Database exports (Nếu bạn muốn đẩy cả database lên thì xóa dòng dưới)
+# database/*.sql (Tôi sẽ để lại để bạn của bạn có database để import)
