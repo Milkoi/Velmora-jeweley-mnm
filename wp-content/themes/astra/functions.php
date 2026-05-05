@@ -213,51 +213,5 @@ require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-filters.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-hooks.php';
 require_once ASTRA_THEME_DIR . 'inc/core/deprecated/deprecated-functions.php';
 
-/**
- * Custom CSS for Header Banner
- */
-add_action('wp_head', function() {
-    ?>
-    <style id="velmora-custom-header">
-        .main-header-bar, .ast-primary-header-bar {
-            background-image: url('https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?w=1600&q=80') !important;
-            background-size: cover !important;
-            background-position: center !important;
-            background-repeat: no-repeat !important;
-            min-height: 450px !important; /* Tăng chiều cao để thấy rõ ảnh */
-            padding-top: 100px !important;
-            display: flex !important;
-            flex-direction: column !important;
-            align-items: center !important;
-            justify-content: center !important;
-        }
-        /* Thêm Title giới thiệu vào Banner */
-        .main-header-bar::after {
-            content: "Vẻ Đẹp Vượt Thời Gian";
-            display: block;
-            font-size: 42px;
-            color: #ffffff;
-            font-family: 'Playfair Display', serif;
-            text-transform: uppercase;
-            letter-spacing: 5px;
-            margin-top: 20px;
-            text-shadow: 2px 2px 15px rgba(0,0,0,0.8);
-            order: 2;
-        }
-        .main-header-container {
-            order: 1;
-            width: 100%;
-        }
-        /* Đảm bảo Menu và Logo hiển thị đẹp trên nền ảnh */
-        .main-header-bar .menu-link, .main-header-bar .site-title a {
-            color: #ffffff !important;
-            text-shadow: 0px 2px 4px rgba(0,0,0,0.5);
-            font-weight: 600;
-        }
-        .ast-header-break-point .main-header-bar {
-            min-height: 250px !important;
-        }
-    </style>
-    <?php
-});
+
 
