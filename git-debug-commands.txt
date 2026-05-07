@@ -1,0 +1,18 @@
+# Kiểm tra connection
+git ls-remote origin
+
+# Kiểm tra authentication
+git config user.name
+git config user.email
+
+# Kiểm tra remote tracking
+git branch -vv
+
+# Kiểm tra push dry-run
+git push --dry-run origin main
+
+# Reset nếu cần
+git reset --soft HEAD~1
+
+# Force push (cẩn thận)
+git push --force-with-lease origin main
