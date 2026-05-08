@@ -92,6 +92,8 @@ define('WP_DEBUG', false);
 
 
 /* That's all, stop editing! Happy publishing. */
+define('WP_HOME','http://localhost/Velmora-jewelry-mnm');
+define('WP_SITEURL','http://localhost/Velmora-jewelry-mnm');
 
 /** Absolute path to the WordPress directory. */
 if (!defined('ABSPATH')) {
