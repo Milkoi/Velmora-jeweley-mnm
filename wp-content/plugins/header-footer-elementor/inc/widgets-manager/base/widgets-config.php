@@ -8,7 +8,7 @@
 namespace HFE\WidgetsManager\Base;
 
 
-use HFE\WidgetsManager\Base\Widgets_Config;
+
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -19,6 +19,7 @@ if ( ! function_exists( 'get_plugins' ) ) {
 	require_once ABSPATH . 'wp-admin/includes/plugin.php';
 }
 
+if ( ! class_exists( 'HFE\WidgetsManager\Base\Widgets_Config' ) ) {
 /**
  * Class Widgets_Config.
  */
@@ -27,14 +28,14 @@ class Widgets_Config {
 	/**
 	 * Widget List
 	 *
-	 * @var widget_list
+	 * @var array
 	 */
 	public static $widget_list = null;
 
 	/**
 	 * Widget List
 	 *
-	 * @var widget_list
+	 * @var array
 	 */
 	public static $pro_widget_list = null;
 
@@ -1303,4 +1304,5 @@ class Widgets_Config {
 
 
 
+}
 }

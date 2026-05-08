@@ -25,42 +25,42 @@ class HFE_Helper {
 	/**
 	 * Widget Options
 	 *
-	 * @var widget_options
+	 * @var array
 	 */
 	private static $widget_options = null;
 
 	/**
 	 * Widget List
 	 *
-	 * @var widget_list
+	 * @var array
 	 */
 	private static $widget_list = null;
 
 	/**
 	 * Widget List
 	 *
-	 * @var widget_list
+	 * @var array
 	 */
 	private static $pro_widget_list = null;
 
 	/**
 	 * Widget List
 	 *
-	 * @var widget_list
+	 * @var array
 	 */
 	private static $all_widgets_list = null;
 
 	/**
 	 * Plugins List
 	 *
-	 * @var get_bsf_plugins_list
+	 * @var array
 	 */
 	private static $get_bsf_plugins_list = null;
 
 	/**
 	 * Recommended Plugins List
 	 *
-	 * @var get_recommended_bsf_plugins_list
+	 * @var array
 	 */
 	private static $get_recommended_bsf_plugins_list = null;
 
@@ -81,7 +81,7 @@ class HFE_Helper {
 	 * Provide General settings array().
 	 *
 	 * @since 2.2.1
-	 * @return array()
+	 * @return string
 	 */
 	public static function premium_starter_templates_status() {
 
@@ -94,7 +94,7 @@ class HFE_Helper {
 	 * Provide General settings array().
 	 *
 	 * @since 2.2.1
-	 * @return array()
+	 * @return string
 	 */
 	public static function free_starter_templates_status() {
 		$free_status = Widgets_Config::get_plugin_status( 'astra-sites/astra-sites.php' );
@@ -105,7 +105,7 @@ class HFE_Helper {
 	 * Provide General settings array().
 	 *
 	 * @since 2.2.1
-	 * @return array()
+	 * @return string
 	 */
 	public static function starter_templates_status() {
 
@@ -123,7 +123,7 @@ class HFE_Helper {
 	 * Provide General settings array().
 	 *
 	 * @since 2.2.1
-	 * @return array()
+	 * @return string
 	 */
 	public static function starter_templates_link() {
 
