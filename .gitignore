@@ -14,3 +14,6 @@ Thumbs.db
 
 # Database exports (Nếu bạn muốn đẩy cả database lên thì xóa dòng dưới)
 # database/*.sql (Tôi sẽ để lại để bạn của bạn có database để import)
+
+# Large backups
+wp-content/backups-dup-lite/
